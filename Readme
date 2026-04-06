@@ -1,0 +1,219 @@
+# 🚀 Full Stack Auth Dashboard
+
+A complete full-stack web application with **User Authentication**, **JWT Security**, and a **User Management Dashboard** built using Node.js, Express, MongoDB Atlas, and Vanilla JavaScript (Axios).
+
+---
+
+## 🌐 Live Demo
+
+* 🔗 Frontend (GitHub Pages):
+  https://chamithkumar.github.io/auth-dashboard/
+
+* 🔗 Backend (Render):
+  https://auth-api-tvca.onrender.com/
+
+---
+
+## 📌 Features
+
+### 🔐 Authentication
+
+* User Signup with hashed password (bcrypt)
+* User Login with JWT token
+* Secure authentication using JSON Web Tokens
+* Logout functionality with token removal
+
+### 🛡️ Authorization
+
+* Role-based access (Admin/User)
+* Protected routes using middleware
+* Admin-only route access
+
+### 👤 User Management
+
+* Add new users
+* View all users (protected)
+* Edit user details
+* Delete users
+* Search users in real-time
+
+### 🌍 Deployment
+
+* Frontend deployed on **GitHub Pages**
+* Backend deployed on **Render**
+* Database hosted on **MongoDB Atlas**
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+* HTML
+* JavaScript (Vanilla)
+* Axios
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+* Mongoose
+
+### Authentication
+
+* bcryptjs
+* jsonwebtoken (JWT)
+
+---
+
+## 📂 Project Structure
+
+```
+project/
+│
+├── models/
+│   └── User.js
+│
+├── middleware/
+│   ├── auth.js
+│   └── isAdmin.js
+│
+├── utils/
+│   └── blacklist.js
+│
+├── server.js
+├── package.json
+└── index.html
+```
+
+---
+
+## ⚙️ Installation (Local Setup)
+
+### 1. Clone the repository
+
+```
+git clone https://github.com/your-username/auth-dashboard.git
+cd auth-dashboard
+```
+
+---
+
+### 2. Install dependencies
+
+```
+npm install
+```
+
+---
+
+### 3. Create `.env` file
+
+```
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_secret_key
+```
+
+---
+
+### 4. Run the server
+
+```
+node server.js
+```
+
+---
+
+## 🔑 API Endpoints
+
+| Method | Endpoint   | Description            |
+| ------ | ---------- | ---------------------- |
+| POST   | /signup    | Register new user      |
+| POST   | /login     | Login user & get token |
+| GET    | /users     | Get all users (auth)   |
+| POST   | /users     | Add user               |
+| PUT    | /users/:id | Update user            |
+| DELETE | /users/:id | Delete user            |
+| GET    | /profile   | Get user profile       |
+| GET    | /admin     | Admin-only route       |
+| POST   | /logout    | Logout user            |
+
+---
+
+## 🔐 Authentication Flow
+
+1. User signs up → password is hashed
+2. User logs in → JWT token generated
+3. Token stored in browser (localStorage)
+4. Token sent in headers for protected routes
+
+```
+Authorization: Bearer <token>
+```
+
+---
+
+## 🚀 Deployment Steps
+
+### Backend (Render)
+
+* Connect GitHub repo
+* Add environment variables:
+
+  * `MONGO_URI`
+  * `JWT_SECRET`
+* Deploy as Web Service
+
+### Frontend (GitHub Pages)
+
+* Push code to GitHub
+* Enable GitHub Pages
+* Update API URL to Render backend
+
+---
+
+## ⚠️ Common Issues
+
+* ❌ MongoDB connection error → Check `MONGO_URI`
+* ❌ 500 error → Check Render logs
+* ❌ CORS error → Ensure `app.use(cors())`
+* ❌ Token issues → Check `JWT_SECRET`
+
+---
+
+## 📈 Future Improvements
+
+* Better UI with CSS / Bootstrap
+* Password reset functionality
+* Pagination for users
+* Profile image upload
+* Dark mode UI
+
+---
+
+## 👨‍💻 Author
+
+**Amith Kumar**
+
+---
+
+## ⭐ Acknowledgement
+
+This project was built as part of a full-stack learning journey covering:
+
+* Backend development
+* Authentication systems
+* API integration
+* Deployment
+
+---
+
+## 📌 Conclusion
+
+This project demonstrates a **real-world full-stack application** with authentication, CRUD operations, and deployment — making it a strong addition to any developer portfolio.
+
+---
