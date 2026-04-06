@@ -217,3 +217,17 @@ This project was built as part of a full-stack learning journey covering:
 This project demonstrates a **real-world full-stack application** with authentication, CRUD operations, and deployment — making it a strong addition to any developer portfolio.
 
 ---
+
+## 🌐 Live Demo
+
+- Frontend (GitHub Pages):  
+  https://chamithkumar.github.io/auth-dashboard/
+
+- Backend (Render):  
+  https://auth-api-tvca.onrender.com/
+
+- Portfolio (Netlify):  
+  https://my-portfolio-amith.netlify.app/
+
+-Auth-Api(Netlify):
+https://auth-api-amith.netlify.app/
